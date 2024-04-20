@@ -6,6 +6,7 @@ This project automates the deployment of a LAMP (Linux, Apache, MySQL, PHP) stac
 
 ## Requirements
 
+- linux
 - Vagrant
 - VirtualBox
 - Ansible
