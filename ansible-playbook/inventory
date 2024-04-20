@@ -1,0 +1,6 @@
+[master]
+Master ansible_host=192.168.8.131 ansible_user=vagrant
+[Slave]
+Slave ansible_host=192.168.8.132 ansible_user=vagrant
+
+ 
