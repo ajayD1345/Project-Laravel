@@ -128,11 +128,11 @@ The Ansible playbook, `playbook.yml`, automates the execution of the `deploy.sh`
 
 The Ansible playbook and its configurations are documented in the
 
-- [Ansible Playbook - playbook.yml](#ansible-playbook---playbookyml)
+- [Ansible Playbook - playbook.yml](#ansible-playbook---siteyml)
 
 - [Ansible Configuration - ansible.cfg](#ansible-configuration---ansiblecfg)
 
-- [Ansible Inventory - inventory.ini](#ansible-inventory---inventoryini)
+- [Ansible Inventory - inventory.ini](#ansible-inventory---inventory)
 
 ## [Code Files](code-files)
 
@@ -528,37 +528,34 @@ This section contains screenshots of the deployed application and the execution 
 
 ### [Screenshot of the Master node on virtualbox](master-node-on-virtualbox)
 
-![Screenshot of the Master node on virtualbox](./screenshots/Master-node-vb.png)
+![Screenshot of the Master node and Slave node on virtualbox](./Screenshots/Virtual-box_servers.png)
 
 ### [Screenshots of the laravel application deployed with Bash script on the Master](screenshots-master-node)
-![Screenshots of the laravel application deployed with Bash script on the Master](./screenshots/master-server-laravel.png)
+![Screenshots of the laravel application deployed with Bash script on the Master](./Screenshots/Master-server_page.png)
 
-![Screenshots of the laravel application deployed with Bash script on the Master](./screenshots/master-server-laravel2.png)
+![Screenshots of the laravel application deployed with Bash script on the Master](./Screenshots/Master-server_3documentation.png)
 
-![Screenshots of the laravel application deployed with Bash script on the Master](./screenshots/master-server-laravel3.png)
+![Screenshots of the laravel application deployed with Bash script on the Master](./Screenshots/Master-server.png)
 
-![Screenshots of the laravel application deployed with Bash script on the Master](./screenshots/master-server-laravel4.png)
+![Screenshots of the laravel application deployed with Bash script on the Master](./Screenshots/Master-server2.png)
 
-### [Screenshot of the Slave node on virtualbox](slave-node-on-virtualbox)
-
-![Screenshot of the Slave node on virtualbox](./screenshots/Slave-node-vb.png)
 
 ### [Screenshot of Playbook execution](playbook-execution-screenshot)
 
-![Screenshot of Playbook execution](./screenshots/Ansible-execution.png)
+![Screenshot of Playbook execution](./Screenshots/ansible-script_run.png)
 
 ### [Screenshots of the laravel application deployed with Ansible on the Slave](screenshots-slave-node)
 
-![Screenshots of the laravel application deployed with Ansible on the Slave](./screenshots/slave-server-laravel.png)
+![Screenshots of the laravel application deployed with Ansible on the Slave](./Screenshots/Slave-server_page.png)
 
-![Screenshots of the laravel application deployed with Ansible on the Slave](./screenshots/slave-server-laravel2.png)
+![Screenshots of the laravel application deployed with Ansible on the Slave](./Screenshots/Slave-server2.png)
 
-![Screenshots of the laravel application deployed with Ansible on the Slave](./screenshots/slave-server-laravel3.png)
+![Screenshots of the laravel application deployed with Ansible on the Slave](./Screenshots/Slave-server.png)
 
-![Screenshots of the laravel application deployed with Ansible on the Slave](./screenshots/slave-server-laravel4.png)
+![Screenshots of the laravel application deployed with Ansible on the Slave](./Screenshots/Slave-server_3document.png)
 ### [Screenshot of the cronjob](cronjob-screenshot)
 
-![Screenshot of the cronjob](./screenshots/cronjob.png)
+![Screenshot of the cronjob](./Screenshots/cronjob-tasks.png)
 
 In the next section, we will provide instructions on how to use the project, including the deployment and maintenance of the LAMP stack.
 
