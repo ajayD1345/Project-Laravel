@@ -79,7 +79,7 @@ To provision servers using Vagrant, we use the `Vagrantfile` provided. This file
 Vagrant.configure("2") do |config|
   # Configuration for Master server
   config.vm.box = "bento/ubuntu-20.04"
-  config.vm.define "Master" do |master|
+  config.vm.define "master" do |master|
     # Master server settings
     # ...
   end
@@ -147,9 +147,9 @@ In this section, we provide the content of the code files used in the project.
 
 Vagrant.configure("2") do |config|
   config.vm.box = "bento/ubuntu-20.04"
-  config.vm.define "Master" do |master|
+  config.vm.define "master" do |master|
     master.vm.hostname = "Master"
-    master.vm.network "private_network", ip: "192.168.56.20"
+    master.vm.network "private_network", ip: "192.168.8.131"
     master.vm.provider "virtualbox" do |vb|
       vb.memory = "1024"
       vb.cpus = "1"
@@ -164,7 +164,7 @@ Vagrant.configure("2") do |config|
     master.vm.provision "shell", path: "./ansible-playbook/deploy.sh" end
   config.vm.define "Slave" do |slave|
     slave.vm.hostname = "Slave"
-    slave.vm.network "private_network", ip: "192.168.56.21"
+    slave.vm.network "private_network", ip: "192.168.8.132"
     slave.vm.provider "virtualbox" do |vb|
       vb.memory = "1024"
       vb.cpus = "2"
@@ -202,7 +202,7 @@ exec > >(tee -a "$log_file") 2>&1
 server_ip=$(ip addr show eth1 | awk '/inet / {print $2}' | cut -d/ -f1)
 
 # Define variables for configurations
-server_admin_email="ayodejihamed@gmail.com"
+server_admin_email="hamedayojide58@gmail.com"
 laravel_repo_url="https://github.com/laravel/laravel.git"
 
 # Start logging the script
@@ -568,7 +568,7 @@ This section provides instructions on how to use the project to deploy the LAMP 
 
 To use this project:
 
-1. Clone the project's GitHub repository: [GitHub Repository Link](https://github.com/Hamed-altschool/Cloud-Eng-v2-2nd-Sems-Exam.git).
+1. Clone the project's GitHub repository: [GitHub Repository Link](https://github.com/ajayD1345/Project-Laravel).
 
 2. Configure the `Vagrantfile` to set up the desired server configurations and network settings. Customize the parameters as needed for your environment.
 
@@ -582,10 +582,10 @@ vagrant up
 
 5. Access the PHP application by using the VM's IP address or domain name.
 
-6. Use the provided Ansible playbook, `playbook.yml`, to automate the execution of the `deploy.sh` script on the "Slave" server. Run the following command in the project directory:
+6. Use the provided Ansible playbook, `site.yml`, to automate the execution of the `deploy.sh` script on the "Slave" server. Run the following command in the project directory:
 
 ```bash
-ansible-playbook playbook.yml
+ansible-playbook site.yml
 ```
 
 7. The playbook will execute the deployment script and create a cron job to check server uptime.
@@ -594,7 +594,7 @@ ansible-playbook playbook.yml
 
 ## [Important Notes](important-notes)
 
-- Regularly check the log files (`deploy.log`, `ansible.log`, and `uptime.log`) for any errors or issues.
+- Regularly check the log files (`deploy.log`, `deployerror.log`, `ansible.log`, and `uptime.log`) for any errors or issues.
 
 - Ensure that you have the necessary credentials and permissions to deploy and configure servers.
 
@@ -623,5 +623,5 @@ For more information and helpful resources, consider exploring the following ref
 
 This concludes the documentation for my Cloud Engineering Second Semester Examination Project. It is my hope that this comprehensive guide assists you in successfully deploying a LAMP stack and managing server automation.
 
-If you have any questions or need further assistance, please don't hesitate to reach out to [me](https://twitter.com/qurtana) or the project contributors.
+If you have any questions or need further assistance, please don't hesitate to reach out to [me](https://twitter.com/AjaxD1345) or the project contributors.
 Thank you for using this project, and best of luck with your cloud engineering endeavors!
