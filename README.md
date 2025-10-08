@@ -35,7 +35,7 @@ This project automates the provisioning and deployment of a **LAMP (Linux, Apach
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/<your-username>/project-laravel.git
+   git clone https://github.com/ajayD1345/Project-Laravel.git
    cd project-laravel
    ```
 2. Provision servers
